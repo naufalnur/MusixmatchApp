@@ -9,6 +9,7 @@ import android.view.MenuItem;
 
 import com.example.Xmusic.view.fragment.ArtistFragment;
 import com.example.Xmusic.R;
+import com.example.Xmusic.view.fragment.FavFragment;
 import com.example.Xmusic.view.fragment.TrackFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -35,6 +36,9 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 break;
             case R.id.menu_bottomnav_home:
                 selectedFragment = new ArtistFragment();
+                break;
+            case R.id.menu_bottomnav_fav:
+                selectedFragment = new FavFragment();
                 break;
         }
         return loadFragment(selectedFragment);
